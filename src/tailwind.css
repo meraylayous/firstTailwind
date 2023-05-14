@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+/* navbar scroll*/
+.headroom--pinned{
+    display: flex;
+    position: fixed;
+    background-color: #1e1c2a;
+    z-index: 1000;
+    max-width: 100%;
+    top:0;
+    box-shadow: 0px 1px 20px #6666;
+}
+.headroom--unpinned{
+    display: flex;
+    position: fixed;
+    background-color: #1e1c2a;
+    z-index: 1000;
+    top:0;
+    max-width: 100%;
+    box-shadow: 0px 1px 20px #6666;
+}
+.headroom--top{
+box-shadow: none;
+position: static;
+
+} 
+/*end navbar scroll*/
+/* START DARK MODE*/
+.dark-mode {
+    background-color: white !important;
+
+}
+ .dark-mode  .dark-black {
+    color: #1e1c2a !important;
+    
+}
+.dark-mode .dark-black  a{
+    color: #1e1c2a !important;
+    transition: all .3s ease-in-out;
+
+}
+.dark-mode .dark-black  a:hover{
+ @apply text-orange-500 translate-x-2  !important;
+
+}
+.dark-mode .headroom--pinned{
+    border-bottom: 1px solid white !important;
+    box-shadow: none !important;
+    background-color: white !important;
+    color: #1e1c2a !important;
+} 
+.dark-mode .headroom--unpinned{
+    border-bottom: 1px solid white !important;
+    box-shadow: none !important;
+    background-color: white !important;
+    color: #1e1c2a !important;
+} 
+/* END DARK MODE */
+.menuIcon{
+    @apply   cursor-pointer self-center mr-2 text-orange-500
+}
+@screen md{
+    .menuIcon{
+        @apply hidden
+    }
+}
+ul li {
+    @apply transition duration-500 ease-in-out  my-2
+}
+@screen md{
+    ul li{
+        @apply mr-10
+    }
+}
+.carusoel img{
+    @apply p-1 bg-orange-500 rounded-lg m-auto   !important
+}
+@screen md{
+    .carusoel img{
+        @apply w-[550px] !important
+    }
+}
+@screen lg{
+    .carusoel img{
+        @apply max-w-3xl !important
+    }
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    @apply bg-orange-500 !important
+}
+.owl-prev > span ,
+.owl-next > span
+{
+    @apply hidden relative
+}
+.owl-prev::before{
+    content: "\f060";
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-family: "FontAwesome";
+    color: orange;
+    left: 100px !important;
+    font-size: 50px;
+    
+}
+.owl-next::after{
+    content: "\f061";
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-family: "FontAwesome";
+    color: orange;
+  
+    font-size: 50px;
+    
+}
+.owl-theme .owl-nav{
+@apply -m-2
+}
+@screen md{
+    .owl-prev::before{
+        left:-30px !important
+        
+    }
+    .owl-next::after{
+        right:-30px !important
+        
+    }
+}
+@screen lg{
+    .owl-prev::before{
+        left: 100px !important;
+        
+    }
+    .owl-next::after{
+        right: 100px !important;
+        
+    }
+}
+
+.box{
+    @apply  relative flex flex-col justify-center items-center bg-bgBox rounded-md p-5
+
+}
+.box-img{
+    @apply w-48 h-48
+}
+.box-img img{
+ @apply w-full h-full
+}
+.box h2{
+    @apply text-bgColorBody text-xl
+}
+.box h3{
+    @apply text-bgColorBody font-normal text-base my-2
+}
+.box .price{
+    @apply text-orange-500 text-sm font-semibold
+}
+.box .cart{
+    @apply absolute top-0 right-0 bg-orange-500 text-white text-[20px] py-2 px-3 rounded-bl-lg
+}
+/* heading */
+.heading{
+    @apply text-center
+}
+.heading span{
+    @apply text-orange-500 text-lg
+}
+.heading h2{
+    @apply text-3xl text-white font-semibold
+}
+/* Services  */
+.services .s-box{
+    @apply   flex flex-col justify-center items-center  p-5 text-center
+
+}
+.services .s-box img{
+    @apply w-24
+}
+.services .s-box h3{
+    @apply text-orange-500 text-lg  mb-3
+}
+.services .s-box p{
+    @apply text-white font-semibold 
+}
+/* footer */
+footer .col h4{
+    @apply text-orange-500 text-xl
+}
+footer .col a{
+    @apply text-white mt-1 inline-block transition ease-in-out  delay-150   duration-300
+}
+footer .col a:hover{
+    @apply text-orange-500  translate-x-2  
+}
+footer .col a i{
+    @apply inline-block mr-5  text-xl transition ease-in-out    duration-300
+}
+
+
+
+@tailwind utilities;
+
+
+

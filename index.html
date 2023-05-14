@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en"  class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- carousel -->
+    <link rel="stylesheet" href="public/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="public/css/owl.theme.default.min.css">
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="public/css/all.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="public/main.css">
+</head>
+<style>
+    #menu-toggle:checked + #menu{
+        display: block;    
+        }
+</style>
+<body class="bg-bgColorBody ">
+    <!-- Start Header Section -->
+     <header   class="max-w-full">
+        <div class=" navbar container mx-auto flex justify-between items-center flex-wrap px-12 py-3 md:pt-4 pt-8 lg:px-32">
+            <div>
+                <a href="" class="text-2xl py-2 font-bold text-orange-500 rtl:mr-3">
+                    Foods
+                </a>
+            </div>
+            <label for="menu-toggle">
+              <i class="fa-solid fa-bars menuIcon"></i>
+           </label>
+            <input type="checkbox" id="menu-toggle" class="hidden" />
+            <div class=" hidden  w-full  md:flex  md:flex-grow md:items-center md:w-auto text-center" id="menu">
+                <ul class=" dark-black  pt-6  md:flex md:pt-0  md:flex-grow md:justify-center text-lg text-white  " >
+                    <li class=" text-orange-500  hover:text-orange-500 "><a href="#home">Home</a></li>
+                    <li class=" hover:text-orange-500  "><a href="#about">About</a></li>
+                    <li class=" hover:text-orange-500 "><a href="#menu">Menu</a></li>
+                    <li class=" hover:text-orange-500 "><a href="#services">Services</a></li>
+                    <li class=" hover:text-orange-500 "><a href="#contact">Contact</a></li>
+                </ul>
+                <div class=" dark-black  text-white mt-6 md:mt-0 color-mode cursor-pointer">
+                    <i class="fa-regular fa-moon text-orange-500 "></i>
+                    <span>Color Mode</span>
+                </div>
+            </div>
+            <div>
+                <a href="indexRlt.html"  class="  dark-black  text-white bg-orange-500 p-2 rounded-sm ml-4 ">AR</a>
+            </div>
+        </div>
+
+     </header>
+    <!-- End Header Section -->
+
+    <!-- Start Home Section -->
+
+    <section class="home" id="home">
+        <div class="container mx-auto md:flex md:justify-between md:items-center md:flex-nowrap flex-wrap px-12 py-3 xl:px-64 mt-16 ">
+            <div >
+                <h1 class="text-6xl text-orange-500 font-semibold">Full Website</h1>
+                <h2 class="dark-black text-3xl text-white mt-5 font-semibold">Food the <br> Most Precious Things</h2>
+                <a href="" class="dark-black  inline-block bg-orange-500 text-white mt-7 py-3 px-6 rounded-md text-xl hover:bg-opacity-90  transition ease-in-out delay-150 hover:translate-y-2 hover:scale-110  duration-300">Today's Menu</a>
+            </div>
+            <div class="block  mt-12 md:m-0  ">
+                <img src="public/images/home.png" alt="home-pag" class="w-96 h-auto ">
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container mx-auto md:flex md:justify-between md:items-center md:flex-nowrap flex-wrap gap-52 px-12 py-3 xl:px-64 mt-16 ">
+            <div class="block  mt-12 md:m-0 md:w-1/2  ">
+                <img src="public/images/about.png" alt="home-pag" class="w-96 h-auto ">
+            </div> 
+            <div class=" mt-10 md:mt-0 md:w-1/2" >
+                <h1 class="text-2xl text-orange-500 font-semibold">About Us</h1>
+                <h2 class=" dark-black text-3xl text-white mt-5 font-semibold">We speak the good  <br> food language</h2>
+                <p class="dark-black text-white mt-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. A minus earum, nihil quaerat corporis aliquam. Ratione dignissimos aliquid nobis, saepe aperiam maxime ipsum soluta et, facilis dolorum consequuntur corporis fugit.</p>
+                <a href="" class=" dark-black inline-block bg-orange-500 text-white mt-7 py-3 px-6 rounded-md text-xl hover:bg-opacity-90  transition ease-in-out delay-150 hover:translate-y-2 hover:scale-110  duration-300">Today's Menu</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Home Section -->
+    <!-- Start carousel Section -->
+    <section class="carusoel py-3 md:pt-20 ">
+        <div class="container mx-auto px-12">
+            <h2 class="text-orange-500 text-2xl md:text-3xl text-center mb-10 ">Food the Most Precious Things</h2>
+            <div class="owl-carousel owl-theme owl-loaded owl-drag ">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="owl-item">
+                            <img src="public/images/image1.jpg" alt="img-carousel " >
+                        </div>
+                        <div class="owl-item">
+                            <img src="public/images/image2.jpg" alt="img-carousel">
+                        </div>
+                        <div class="owl-item">
+                            <img src="public/images/image3.jpg" alt="img-carousel">
+                        </div>
+                        <div class="owl-item">
+                            <img src="public/images/image4.jpg" alt="img-carousel">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End carousel Section -->
+    <!-- Start Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container mx-auto px-12 xl:px-64 py-3">
+            <div class=" heading">
+                <span >Food menu</span>
+                <h2 class="dark-black">Fresh taste and great price</h2>
+            </div>
+            <div class="menu-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 items-center ">
+                <div class="box ">
+                    <div  class="box-img  ">
+                        <img src="public/images/food1.png" alt="">
+                    </div>
+                    <h2 >Chicken Burger</h2>
+                    <h3 >Tasty Food</h3>
+                    <span class="price">$11.00</span>
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                </div>
+                <div class="box">
+                    <div  class=" box-img">
+                        <img src="public/images/food2.png" alt="">
+                    </div>
+                    <h2>Special Beef Burger</h2>
+                    <h3>Tasty Food</h3>
+                    <span class="price">$11.00</span>
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                </div>
+                <div class="box">
+                    <div  class="box-img">
+                        <img src="public/images/food3.png" alt="">
+                    </div>
+                    <h2>Chicken Fry Pack</h2>
+                    <h3>Tasty Food</h3>
+                    <span class="price">$11.00</span>
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+     <!-- End Menu Section -->
+
+     <!-- Start Services Section -->
+      <section class="services"  id="services">
+        <div  class="container mx-auto px-12 xl:px-64 py-3 md:py-10">
+            <div class="heading">
+                <span>Services</span>
+                <h2 class="dark-black">We provide best quality food</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 items-center ">
+                <div  class="s-box">
+                    <img src="public/images/s1.png" alt="">
+                    <h3>Order</h3>
+                    <p class="dark-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas laudantium modi soluta quia officiis nesciunt ut labore dolore aperiam dolores.</p>
+                </div>
+                <div class="s-box">
+                    <img src="public/images/s2.png" alt="">
+                    <h3>Shipping</h3>
+                    <p class="dark-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas laudantium modi soluta quia officiis nesciunt ut labore dolore aperiam dolores.</p>
+                </div>
+                <div class="s-box">
+                    <img src="public/images/s3.png" alt="">
+                    <h3>Delivered</h3>
+                    <p class="dark-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas laudantium modi soluta quia officiis nesciunt ut labore dolore aperiam dolores.</p>
+                </div>
+
+            </div>
+          
+
+        </div>
+
+      </section>
+     <!-- End Services Section -->
+
+     <!-- Start Contact Section -->
+     <section class="contact"  id="contact">
+        <div class="container mx-auto px-12 py-3 xl:px-64 md:flex md:justify-between flex-wrap lg:flex-nowrap gap-12">
+    
+            <div class="">
+                <div >
+                    <iframe class=" w-[300px] sm:w-[500px] h-[300px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.11969721114!2d55.15410701495981!3d25.097809183942463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b4164e9f477%3A0x873c65b1c9eb0f7e!2sConcord%20Tower%20-%20Al%20Sufouh%20-%20Al%20Sufouh%202%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sus!4v1678805432307!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="flex justify-between items-center  mt-5 text-white px-3 w-[300px] sm:w-[500px] ">
+                    
+                    <div >
+                        <h2  class="mb-2">Say hello</h2>
+                        <span class="block mb-2">01152035478</span>
+                        <a href="" class="mb-2">hello@company.com</a>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <a href="#" class="mb-2"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#" class="mb-2"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="mb-2"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-[-14px]">
+              <form action="">
+                <input type="text" placeholder="Your Name" class=" w-full mt-6 md:mt-0 border border-solid border-gray-500 px-4 py-2 rounded-sm outline-orange-500  sm:w-[45%] ">
+                <input type="email" placeholder="Email " class=" w-full mt-3 ms:mt-0  xl:ml-10 border border-solid border-gray-500 px-4 py-2 rounded-sm outline-orange-500  sm:w-[45%]">
+                <textarea  id="" cols="30" rows="10" placeholder="Message" class="block mt-4 w-full border border-solid border-gray-500 px-4 py-2 outline-orange-500  sm:w-full"></textarea>
+                <div class="text-right">
+                    <a class=" dark-black inline-block bg-orange-500 text-white mt-5 py-3 px-6 rounded-md text-xl hover:bg-opacity-90  transition ease-in-out delay-150  duration-300">Send </a>
+                </div>
+               
+               
+             
+              </form>
+            </div>
+        
+        </div>
+     </section> 
+     <footer>
+        <div class=" container mx-auto px-12 py-3 xl:px-64 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12 mt-10 pb-8" >
+            <div class="col">
+                <h4>Menu Links</h4>
+                <ul class="dark-black ">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Our Services</h4>
+                <ul class="dark-black ">
+                    <li><a href="">Web Desgin </a></li>
+                    <li><a href="">Web Development</a></li>
+                    <li><a href="">Marketing</a></li>
+                    <li><a href="">Product Management</a></li>
+                    <li><a href="">Graphic Desgin</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Information</h4>
+                <ul class="dark-black ">
+                    <li><a href="#">About Us </a></li>
+                    <li><a href="#">Delivery Information</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Contact Us</h4>
+                <div class="social  dark-black ">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                </div>
+            </div>
+        </div>
+     </footer>
+      <!-- End Contact Section -->
+    <script src="public/js/jquery-3.6.4.min.js"></script>
+    <script src="public/js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha512-52YmORpI2a/kIVQ9S4ELQTjKcbxRzFIhq967wO8lzKrs+45JA/24XCX+dJarTgPA/8NN2qVokQNriWmdWRgeTA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="public/js/main.js"></script>
+</body>
+</html>
